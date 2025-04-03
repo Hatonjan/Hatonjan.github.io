@@ -16,7 +16,4 @@ $(function()
 {
     new WOW().init();
     $(".rotate").textrotator();
-    $(".rotateimg").imagerotator();
 })
-
-
