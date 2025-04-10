@@ -188,9 +188,9 @@
                 silentScroll(0);
 
                 //scrolling the page to the section with no animation
-                if (element.length) {
-                    $htmlBody.scrollTop(element.position().top);
-                }
+                // if (element.length) {
+                //     $htmlBody.scrollTop(element.position().top);
+                // }
             }
 
         };
@@ -398,7 +398,7 @@
             container.addClass(WRAPPER);
         }
 
-        //trying to use fullpage without a selector?
+        //trying to use full page without a selector?
         else{
             showError('error', 'Error! Fullpage.js needs to be initialized with a selector. For example: $(\'#myContainer\').fullpage();');
         }
@@ -645,27 +645,28 @@
         function scrollHandler(){
             var currentSection;
 
-            if(!options.autoScrolling || options.scrollBar){
-                var currentScroll = $window.scrollTop();
-                var visibleSectionIndex = 0;
-                var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
+        /***** 4/10/25 this section was commented out because it was causing unexpected behavior while browsing in a movil device. Jonathan *****/
+            // if(!options.autoScrolling || options.scrollBar){
+            //     var currentScroll = $window.scrollTop();
+            //     var visibleSectionIndex = 0;
+            //     var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
 
-                //taking the section which is showing more content in the viewport
-                var sections =  document.querySelectorAll(SECTION_SEL);
-                for (var i = 0; i < sections.length; ++i) {
-                    var section = sections[i];
+            //     //taking the section which is showing more content in the viewport
+            //     var sections =  document.querySelectorAll(SECTION_SEL);
+            //     for (var i = 0; i < sections.length; ++i) {
+            //         var section = sections[i];
 
-                    var current = Math.abs(currentScroll - section.offsetTop);
+            //         var current = Math.abs(currentScroll - section.offsetTop);
 
-                    if(current < initial){
-                        visibleSectionIndex = i;
-                        initial = current;
-                    }
-                }
+            //         if(current < initial){
+            //             visibleSectionIndex = i;
+            //             initial = current;
+            //         }
+            //     }
 
-                //geting the last one, the current one on the screen
-                currentSection = $(sections).eq(visibleSectionIndex);
-            }
+            //     //geting the last one, the current one on the screen
+            //     currentSection = $(sections).eq(visibleSectionIndex);
+            // }
 
             if(!options.autoScrolling || options.scrollBar){
                 //executing only once the first time we reach the section

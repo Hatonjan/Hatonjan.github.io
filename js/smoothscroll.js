@@ -233,4 +233,5 @@ if (!window["jQuery"])
 // Initialize all .smoothScroll links
 jQuery(function($) {
   $.localScroll({ filter: ".smoothScroll" });
+  
 });

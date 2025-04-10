@@ -288,6 +288,22 @@ h1,h2,h3,h4,h5
         font-weight: bold;
         float: right;
     }
+#about 
+    {
+        height: 100vh; /* Makes the section cover the full viewport height */
+        overflow: hidden; /* Prevents content from spilling outside the section */
+    }
+#about .container
+ {
+    height: 100%; /* Ensures the container stretches to match #about */
+}
+
+#about .row 
+{
+    height: 100%; /* Ensures rows stretch fully */
+    align-items: center; /* Centers content vertically */
+}    
+
 /* end about */
 
 /* start portfolio */
@@ -421,3 +437,15 @@ footer hr
         color: #275fa8;
     }
 /* end social icon */
+
+
+/* Start of image transition */
+.img-responsive {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
+}
+
+.img-responsive.active {
+    opacity: 1; /* Fully visible */
+}
+/* End of image transition */
