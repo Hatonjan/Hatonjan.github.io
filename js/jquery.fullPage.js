@@ -645,7 +645,7 @@
         function scrollHandler(){
             var currentSection;
 
-        /***** 4/10/25 this section was commented out because it was causing unexpected behavior while browsing in a movil device. Jonathan *****/
+        /***** This section was commented out because it was causing unexpected behavior while browsing in a movil device. Jonathan 4/10/25 *****/
             // if(!options.autoScrolling || options.scrollBar){
             //     var currentScroll = $window.scrollTop();
             //     var visibleSectionIndex = 0;
