@@ -19,6 +19,8 @@ $(function()
 })
 
 
+/* Start of the rotate image function */
+
 /* Initialize the rotateImage function and setup the images to be used */
 function setupImages() {
     // Images to be displayed
@@ -55,3 +57,6 @@ function rotateImage(imageId, imageArray) {
 
 // Initialize the function
 setupImages();
+/* End of the rotate image function */
+
+
