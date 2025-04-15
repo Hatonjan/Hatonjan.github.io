@@ -8,7 +8,7 @@ https://templatemo.com/tm-458-lavish
 
 body
 {
-	background: #2b2c30;
+	background: hsl(228, 5%, 18%);
 	color: #999;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -266,10 +266,10 @@ h1,h2,h3,h4,h5
         background: #ffffff;
         height: 4px;
     }
-#about .progress .progress-bar-danger
+/* #about .progress .progress-bar-danger
     {
         background: #275fa8;
-    }
+    } */
 #about .text-top
     {
         padding-top: 50px;
@@ -345,6 +345,12 @@ h1,h2,h3,h4,h5
 /* end portfolio */
 
 /* start contact */
+#contact
+    {
+        background: #000000;
+        text-align: center;
+        min-height: 70vh; /* Makes the section cover the full viewport height */
+    }
 
 #contact address
     {
@@ -525,7 +531,3 @@ img:hover {
 }
 /* End of gradient shadows */
 
-/* Start of data visualization 4/14/25 */
-
-
-/* End of data visualization*/
