@@ -439,7 +439,7 @@ footer hr
 /* end social icon */
 
 
-/* Start of image transition */
+/* Start of image transition 4/12/25 Jonathan*/
 .img-responsive {
     opacity: 0; /* Initially hidden */
     transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
@@ -462,7 +462,7 @@ footer hr
 }
 /* end of image slider */
 
-/* Slider-track */
+/* Slider-track 4/13/2025 Jonathan*/
 .slide-track {
     display: flex;
     width: calc(250px * 12); /* Adjust based on the number of images */
@@ -524,3 +524,8 @@ img:hover {
     transform: rotateZ(180deg); /* Flip the gradient for the right side */
 }
 /* End of gradient shadows */
+
+/* Start of data visualization 4/14/25 */
+
+
+/* End of data visualization*/
