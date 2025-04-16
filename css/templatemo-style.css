@@ -531,3 +531,13 @@ img:hover {
 }
 /* End of gradient shadows */
 
+/* Start of the video window 4/16/2025*/
+.video-window {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    margin: 0;
+    margin-top: 0;
+}
+/* End of the video window*/
