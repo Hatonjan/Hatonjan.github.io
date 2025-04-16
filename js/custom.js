@@ -24,7 +24,7 @@ $(function()
 /* Initialize the rotateImage function and setup the images to be used */
 function setupImages() {
     // Images to be displayed
-    const developerImages = ["images/videoGame.png", "images/spaceX.png"];
+    const developerImages = ["images/videoGame.png", "images/foliumMaps.png"];
     const qcImages = ["images/burnDownChart.png", "images/InsForm.png"];
     const fabImages = ["images/chandelier.JPG", "images/stairsSketchUp.JPEG"];
 
