@@ -591,7 +591,8 @@
         * Creates a vertical navigation bar.
         */
         function addVerticalNavigation(){
-            $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>');
+            /* This was commented to eliminate the  vertical navigation bar 4/17/25 */
+            // $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>'); 
             nav = $(SECTION_NAV_SEL);
 
             nav.addClass(function() {
@@ -619,21 +620,7 @@
             }
         }
 
-        function createSlimScrollingHandler(){
-            $(SECTION_SEL).each(function(){
-                var slides = $(this).find(SLIDE_SEL);
-
-                if(slides.length){
-                    slides.each(function(){
-                        createSlimScrolling($(this));
-                    });
-                }else{
-                    createSlimScrolling($(this));
-                }
-
-            });
-            $.isFunction( options.afterRender ) && options.afterRender.call( this);
-        }
+         
 
         var scrollId;
         var scrollId2;
@@ -645,7 +632,7 @@
         function scrollHandler(){
             var currentSection;
 
-        /***** This section was commented out because it was causing unexpected behavior while browsing in a movil device. Jonathan 4/10/25 *****/
+        /***** This section was commented out because it was causing unexpected behavior while browsing in a movil device. 4/10/25 *****/
             // if(!options.autoScrolling || options.scrollBar){
             //     var currentScroll = $window.scrollTop();
             //     var visibleSectionIndex = 0;
