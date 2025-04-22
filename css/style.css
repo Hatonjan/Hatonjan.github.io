@@ -336,6 +336,7 @@ h1,h2,h3,h4,h5
     position: relative;
     margin-bottom: 30px;
 }
+
 #portfolio .portfolio-thumb .portfolio-overlay {
     background: #275fa8;
     top: 0;
@@ -349,6 +350,7 @@ h1,h2,h3,h4,h5
     padding-top: 60px;
     transition: all 0.4s ease-in-out;
 }
+
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
     cursor: pointer;
     opacity: 0.8;
