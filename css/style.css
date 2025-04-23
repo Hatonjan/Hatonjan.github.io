@@ -688,3 +688,48 @@ nav a {
     color: #476fa3; 
 }
 /* End of the navigation bar */
+
+/* Start of images gallery */
+#gallery {
+    background: hsl(228, 5%, 18%);
+    max-height: 100vh; 
+    max-width: 100%;
+    overflow-y: auto;  
+    /* padding-bottom: 50px; */
+    padding: 50px 0%;
+}
+
+#gallery .title {
+    color: #44495f;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#gallery .container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 50px 8%; */
+}
+
+#gallery .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+#gallery .images img {
+    height: 250px; /* Set the height you want for all images */
+    object-fit: cover; /* Ensures the image fills the height while maintaining proportions */
+    width: 100%; /* Makes sure images stretch to the container width */
+}
+
+#gallery .footer{
+        border-top: 0px solid #4d4d4d;
+        text-align: center;
+        padding-top: 100px;    
+    }
+/* End of images gallery */
