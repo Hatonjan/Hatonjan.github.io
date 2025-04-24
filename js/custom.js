@@ -24,9 +24,9 @@ $(function()
 /* Initialize the rotateImage function and setup the images to be used */
 function setupImages() {
     // Images to be displayed
-    const developerImages = ["images/videoGame.png", "images/foliumMaps.png"];
-    const qcImages = ["images/burnDownChart.png", "images/InsForm.png"];
-    const fabImages = ["images/chandelier.JPG", "images/stairsSketchUp.JPEG"];
+    const developerImages = ["images/display/gameCode.png", "images/display/foliumMaps.png"];
+    const qcImages = ["images/display/burnDownChart.png", "images/display/InsForm.png"];
+    const fabImages = ["images/gallery/chandelier.JPG", "images/3dModels/stairsSketchUp1.jpg"];
 
     // Initialize the rotateImage function
     rotateImage("Developer", developerImages);
@@ -60,3 +60,11 @@ setupImages();
 /* End of the rotate image function */
 
 
+/* Dropdown Menu */
+const toggleBtn = document.querySelector('.toggle_btn');
+const toggleBtnIcon = document.querySelector('.toggle_btn i');
+const dropdownMenu = document.querySelector('.dropdown');
+
+toggleBtn.onclick = function() {
+    dropdownMenu.classList.toggle('open');
+};

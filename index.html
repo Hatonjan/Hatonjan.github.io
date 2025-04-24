@@ -15,7 +15,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-
 		<!-- animate -->
 		<link rel="stylesheet" href="css/animate.min.css">
 		<!-- bootstrap -->
@@ -29,14 +28,17 @@
 		<!-- custom -->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-		<nav id="navigation">
-			<a href="#home">Home</a>
-			<a href="#work">Work</a>
-			<a href="#about">About</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact</a>
-		</nav>
+		
 	<body>
+		<nav id="navigation" class="navbar">
+			<ul class="links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#work">What I Do</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 
 	<div id="fullpage">
 		<!-- start home -->
@@ -81,16 +83,14 @@
 								<p>
 									I am currently pursuing a Bachelor's degree in Computer Science through the University of London's online program.
 									Additionally, I have earned certifications such as the University of London Introduction to Computer Science and Programming
-									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EK2JSLNUDXXL" target="_blank" 
-									aria-label="Link to theUniversity of London Introduction to Computer Science and Programming Specialization certificate" 
+									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EK2JSLNUDXXL" 
+									title="Certificate link" rel="noopener noreferrer" target="_blank" aria-label="Link to the certificate" 
 									>Specialization</a>, Google IT Support Professional  
-									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/J64B8R9RXGUX" target="_blank" 
-									aria-label="Link to the Google IT Support Professional Certificate" 
+									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/J64B8R9RXGUX" 
+									target="_blank" title="Certificate link" rel="noopener noreferrer" aria-label="Link to the certificate" 
 									>Certificate</a>, and IBM Data Science Professional 
-									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3MIIYA2LF70Q" target="_blank" 
-									aria-label="Link to the and IBM Data Science Professional Certificate." 
-									>Certificate.</a>, 
-									
+									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/3MIIYA2LF70Q" 
+									title="Certificate link" rel="noopener noreferrer" target="_blank" aria-label="Link to the certificate.">Certificate.</a>, 
 								</p>
 							</div>
 						</div>
@@ -107,11 +107,11 @@
 									I have over 6+ years of experience monitoring projects, ensuring their on-time and within-budget completion. 
 									I have leveraged mathematical principles, such as the Pythagorean theorem, to streamline workflows and 
 									significantly reduce fabrication time. Additionally, I hold certifications such as the City of Los Angeles 
-									<a href="https://drive.google.com/drive/folders/1gbXRVvaimLJIsuycTwMMfGpNomhf4Xt-" target="_blank" 
-									aria-label="Link to the and Google Project Management specialization Certificate." 
+									<a href="https://drive.google.com/drive/folders/1gbXRVvaimLJIsuycTwMMfGpNomhf4Xt-" target="_blank"
+									title="Certificate link" rel="noopener noreferrer" aria-label="Link to the Certificate." 
 									>Quality Control</a> in Welding Inspection and Steel Fabrication, and the Google Project Management 
-									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TVE2B8W7KU9C" target="_blank" 
-									aria-label="Link to the and Google Project Management specialization Certificate." 
+									<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/TVE2B8W7KU9C" target="_blank"
+									title="Certificate link" rel="noopener noreferrer" aria-label="Link to the Certificate." 
 									>Specialization.</a>
 								</p>
 							</div>
@@ -145,14 +145,17 @@
 					<div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.6s">
 						<h2>ABOUT JONATHAN</h2>
 						<h4>COMPUTER SCIENCE STUDENT</h4>
-						<p> Programming: Custom functions, event handling code, loops, interactive graphical computer programs, and object-oriented programming techniques.</p>
+						<p>Programming: Custom functions, event-handling code, loops, interactive graphical computer programs, and applied object-oriented programming techniques using JavaScript, HTML, and CSS.</p>
+
 						<p>Math: limits and differentiation, Algebra: Vectors, Matrices and Linear Transformations, and Combinatorics and Probability.</p>
-						<p>DATA SCIENCE: Acquired skills in importing and cleaning data, analyzing and visualizing data, and building machine learning models and pipelines.</p>
-						<p>IT: Developed expertise in troubleshooting, customer service, networking, operating systems, system administration, and security.</p>
+						
+						<p>Data Science: Acquired skills in importing and cleaning data, analyzing and visualizing data, and constructing machine learning models and pipelines utilizing Python and SQL.</p>
+						
+						<p>IT: Acquired knowledge in troubleshooting, customer service, networking, operating systems, system administration, and security with tools such as PowerShell and GNOME Terminal. </p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.6s">
 						<div class="section1">
-							<img id="Developer" src="images/videoGame.png" class="img-responsive active" alt="Rotating Image">
+							<img id="Developer" src="images/display/gameCode.png" class="img-responsive active" alt="Rotating Image">
 						</div>
 					</div>
 				</div>
@@ -167,14 +170,16 @@
 					<div class="col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.6s">
 						<h2>ABOUT JONATHAN</h2>
 						<h4>MANAGER &AMP; QUALITY CONTROL</h4>
-						<p>PROJECT MANAGEMENT: I create and maintain documentation to streamline communication, ensuring teams have access to the tools and information they need. 
-							I monitor projects to ensure timely and within-budget completion, while verifying adherence to fabrication standards.</p>
-						<p>GENERAL FOREMAN QC: I developed and implemented processes that reduced fabrication time by applying mathematical principles. Notably, I used the 
+						<p>PROJECT MANAGEMENT: Create and maintain documentation to streamline communication, ensuring teams have access to the tools and information they need.
+							Monitor projects to ensure timely and within-budget completion, while verifying adherence to fabrication standards.  
+							Analyze complete sets of plans to extract the necessary information for project bidding, including welding and fabrication tasks.  </p>	
+
+						<p>GENERAL FOREMAN QC: Developed and implemented processes that reduced fabrication time by applying mathematical principles. Notably, I used the 
 							Pythagorean theorem to fabricate hundreds of stair stringers, optimizing workflows and driving efficiency improvements.</p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.6s">
 						<div class="section2">
-							<img id="QCM" src="images/burnDownChart.png" class="img-responsive active" alt="Rotating Image">
+							<img id="QCM" src="images/display/burnDownChart.png" class="img-responsive active" alt="Rotating Image">
 						</div>
 					</div>
 				</div>
@@ -189,15 +194,18 @@
 					<div class="col-md-6 col-xs-11 wow fadeInLeft" data-wow-delay="0.6s">
 						<h2>ABOUT JONATHAN</h2>
 						<h4>STEEL &AMP; FABRICATION</h4>
-						<p>STEEL AND FABRICATION: I have worked on projects ranging from small artistic pieces that sit on a desk to structural 
-							projects requiring heavy machinery for installation. Over the course of my career, I have earned multiple welding certifications, which not only allowed 
-							me to grow professionally but also highlight my commitment to continuous learning.</p>
-						<p>3D MODELLING: I have experience in 3D modeling and design using SketchUp and SolidWorks, which has helped me throughout my career to identify 
-							potential issues before moving to the fabrication phase.</p>
+						<p>STEEL AND FABRICATION: With over 17 years of experience, I have contributed to a wide range of projects, from small artistic pieces designed for desks to 
+							large structural projects that require heavy machinery for installation. Throughout my career, I have earned multiple welding certifications, which not 
+							only allowed me to grow professionally but also highlighted my commitment to continuous learning.
+						</p>
+						
+						<p>3D MODELING SOFTWARE: With over 12 years of experience using 3D modeling software, I have developed designs and models using SketchUp and SolidWorks. These tools have been 
+							invaluable in helping me identify potential issues early in the process, ensuring a smoother transition to the fabrication phase.
+						</p>
 					</div>
 					<div class="col-md-6 col-xs-11 wow fadeInRight" data-wow-delay="0.6s">
 						<div class="section3">
-							<img id="fab" src="images/chandelier.JPG" class="img-responsive active" alt="Chandelier img">
+							<img id="fab" src="images/gallery/chandelier.JPG" class="img-responsive active" alt="Chandelier img">
 						</div>
 					</div>
 				</div>
@@ -213,22 +221,27 @@
 					<div class="slider">
 						<div class="slide-track">
 							<!-- Images to be display -->
-							<div class="slide"><img src="images/spaceX.png" alt="Data Science Project"></div>
-							<div class="slide"><img src="images/foliumMaps.png" alt="folium library project"></div>
-							<div class="slide"><img src="images/theNightFallAdventure.png" alt="Video Game Project"></div>
-							<div class="slide"><img src="images/chandelier.JPG" alt="Custom Chandelier"></div>
-							<div class="slide"><img src="images/burnDownChart.png" alt="Burn Down Chart"></div>
-							<div class="slide"><img src="images/chandelierSketchUp.JPEG" alt="SketchUp Model"></div>
 							<div class="slide"><img src="images/MJS.jpg" alt="My Personal Logo"></div>
+							<div class="slide"><img src="images/display/spaceX.png" alt="Data Science Project"></div>
+							<div class="slide"><img src="images/display/foliumMaps.png" alt="folium library project"></div>
+							<div class="slide"><img src="images/display/gameCode.png" alt="Video Game Project"></div>
+							<div class="slide"><img src="images/gallery/chandelier.JPG" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/3dModels/staircase2.jpg" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/3dModels/3dStaircase1.jpg" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/display/burnDownChart.png" alt="Burn Down Chart"></div>
+							<div class="slide"><img src="images/plots/3dClusters.png" alt="Burn Down Chart"></div>
+							
 
 							<!-- Images to be display a second time for better flow-->
-							<div class="slide"><img src="images/spaceX.png" alt="Data Science Project"></div>
-							<div class="slide"><img src="images/foliumMaps.png" alt="folium library project"></div>
-							<div class="slide"><img src="images/theNightFallAdventure.png" alt="Video Game Project"></div>
-							<div class="slide"><img src="images/chandelier.JPG" alt="Custom Chandelier"></div>
-							<div class="slide"><img src="images/burnDownChart.png" alt="Burn Down Chart"></div>
-							<div class="slide"><img src="images/chandelierSketchUp.JPEG" alt="SketchUp Model"></div>
 							<div class="slide"><img src="images/MJS.jpg" alt="My Personal Logo"></div>
+							<div class="slide"><img src="images/display/spaceX.png" alt="Data Science Project"></div>
+							<div class="slide"><img src="images/display/foliumMaps.png" alt="folium library project"></div>
+							<div class="slide"><img src="images/display/gameCode.png" alt="Video Game Project"></div>
+							<div class="slide"><img src="images/gallery/chandelier.JPG" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/3dModels/staircase2.jpg" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/3dModels/3dStaircase1.jpg" alt="Custom Chandelier"></div>
+							<div class="slide"><img src="images/display/burnDownChart.png" alt="Burn Down Chart"></div>
+							<div class="slide"><img src="images/plots/3dClusters.png" alt="Burn Down Chart"></div>
 						</div>
 					</div>
 				</div>
@@ -240,10 +253,13 @@
 								</div>
 								<div class="media-body">
 									<h3 class="media-heading">Computer Science</h3>
-									<p><a href="dataVisualization.html" target="_blank" aria-label="GitHub Repository"> Extraction and Visualization of Stock Data</a></p>
-									<p><a href="spacexAnalysis.html" target="_blank" aria-label="GitHub Repository">SpaceX Rocket Launch Analysis</a></p>
-									<p><a href="videoGame.html" target="_blank" aria-label="GitHub Repository">The Nightfall Adventure</a></p>
-									<p><a href="https://github.com/Hatonjan/RocketAnimation" target="_blank" aria-label="GitHub Repository">Rocket Launch animation</a></p>
+									<p><a href="spacexAnalysis.html" aria-label="SpaceX Analysis fullPage">SpaceX Rocket Launch Analysis</a></p>
+									<p><a href="videoGame.html" aria-label="The theNightFall Adventure fullPage">The Nightfall Adventure</a></p>
+									<p><a href="dataVisualization.html" aria-label="Data Visualization fullPage"> Extraction and Visualization of SpaceX and GAme Stop Stock Data</a></p>
+									<!-- <p><a href="https://github.com/Hatonjan/RocketAnimation" target="_blank" 
+										title="Certificate link" rel="noopener noreferrer" aria-label="GitHub Repository">Rocket Launch animation
+									</a></p> -->
+									<p> <a href="#portfolio" class="smoothScroll">Personal website on GitHub Pages.</a></h4>
 								</div>
 							</div>
 						</div>
@@ -266,8 +282,8 @@
 								</div>
 								<div class="media-body">
 									<h3 class="media-heading">Steel Fabrication</h3>
-									<p>Images Gallery</p>
-									<p>3D Modeling</p>
+									<a href="projectsGallery.html"><p>Images Gallery</p></a>
+									<a href="3dModels.html"><p>3D Modeling</p></a>
 								</div>
 							</div>
 						</div>
@@ -293,19 +309,23 @@
 		<!-- end contact -->
 
 		<!-- start footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow fadeIn" data-wow-delay="0.6s">
-						<p>Copyright &copy; 2025 Jonathan Scott.</p>
-						<hr>
-						<ul class="social-icon">
-							<li><a href="https://github.com/Hatonjan" class="fa fa-github" target="_blank"></a></li>
-							<li><a href="https://www.linkedin.com/in/jonathan-scott-140709317/" class="fa fa-linkedin" target="_blank"></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+		<footer class="footer">
+			<hr style="border:  1px solid #44444449; width: 100%; margin: 10px auto;">
+			<p>Copyright &copy; 2025 Jonathan Scott.</p>
+
+			<ul class="social-icon">
+				<li>
+					<a href="https://github.com/Hatonjan" class="fa fa-github" target="_blank" 
+						title="Visit GitHub profile" rel="noopener noreferrer">
+					</a>
+				</li>
+				
+				<li>
+					<a href="https://www.linkedin.com/in/jonathan-scott-140709317/" class="fa fa-linkedin" 
+						target="_blank" title="Visit linkedin profile" rel="noopener noreferrer">
+					</a>
+				</li>
+			</ul>
 		</footer>
 		<!-- end footer -->
 

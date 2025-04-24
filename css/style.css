@@ -49,7 +49,7 @@ footer .fp-tableCell
 /* start all heading */
 h1,h2,h3,h4,h5
     {
-        color: #ffffff;
+        color: #e1e3e9;
         font-weight: bold;
     }
 /* end all heading */
@@ -200,6 +200,9 @@ h1,h2,h3,h4,h5
     #home h2.rotate {
         font-size: 1.4em; /* Adjust size for smaller screens */
         line-height: 1.4; /* Keep text stable */
+    }
+    #home {
+        padding-top: 0;
     }
 }
     
@@ -356,6 +359,7 @@ h1,h2,h3,h4,h5
     opacity: 0.8;
     transform: scale(0.9);
 }
+ 
 /* end portfolio */
 
 /* start contact */
@@ -543,7 +547,7 @@ footer hr
 }
 
 .slide img {
-    width: 100%;
+    width: 200px;
     height: 60%;
    
 }
@@ -593,6 +597,7 @@ img:hover {
 }
 /* End of the video window*/
 
+/* Start of documents window 4/20/25*/
 #document {
     background: hsl(228, 5%, 18%);
 }
@@ -668,34 +673,65 @@ img:hover {
     border: 2px solid #ddd; 
     padding: 10px; 
 }
+/* End of documents window */
 
 
-/* Start of the navigation bar 4/17/2025*/
-#navigation { 
-    font-family: Arial, sans-serif; 
-    margin: 0; 
-    padding: 20px; 
-    line-height: 1.6; 
+/* Start of the navigation bar 4/23/2025*/
+#navigation{
+    background: hsl(228, 5%, 17%);
+}
+a {
+    text-decoration: none;
+    color:#275fa8;
+    font-size: 20px; 
 }
 
-nav { 
-    margin-bottom: 20px; 
+a:hover{
+    text-decoration: none; /*Removes the underline*/
+    color:#a7a7a8;
+    font-weight:bold;
 }
 
-nav a { 
-    margin-right: 15px; 
-    text-decoration: none; 
-    color: #476fa3; 
+.navbar {
+    position: sticky; 
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links {
+    display: flex;    /* Aligns list items horizontally */
+    gap: 40px;        /* Adds space between items */
+    list-style: none; /* Removes default bullet points */
+    padding: 0;       /* Removes default padding */
+    margin: 0;        /* Removes default margin */
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    a {
+        font-size: 15px; 
+        font-weight:bold;
+    }
+    .navbar {
+        position: sticky; 
+    }
+    .navbar .links {
+        gap: 15px;
+    }
 }
 /* End of the navigation bar */
 
-/* Start of images gallery */
+/* Start of images gallery 4/22/25 */
 #gallery {
     background: hsl(228, 5%, 18%);
     max-height: 100vh; 
     max-width: 100%;
     overflow-y: auto;  
-    /* padding-bottom: 50px; */
     padding: 50px 0%;
 }
 
@@ -722,9 +758,15 @@ nav a {
 }
 
 #gallery .images img {
-    height: 250px; /* Set the height you want for all images */
+    height: 250px;
     object-fit: cover; /* Ensures the image fills the height while maintaining proportions */
-    width: 100%; /* Makes sure images stretch to the container width */
+    width: 100%;
+    transition: transform 0.9s;
+}
+
+#gallery .images img:hover {
+    transform: scale(1.1) translateZ(20px); 
+    cursor: pointer;
 }
 
 #gallery .footer{
